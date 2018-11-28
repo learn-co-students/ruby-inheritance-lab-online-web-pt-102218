@@ -18,3 +18,18 @@ some_knowledge = avi.teach
 steve.learn(some_knowledge)
 
 puts "Steve just learned this important knowledge: '#{steve.knowledge.first}' from Avi"
+
+jim = User.new
+jim.first_name = "Jim"
+jim.last_name = "Scwartz"
+
+steve.learn(avi.teach)
+
+capheus = Student.new
+capheus.first_name = "Capheus"
+capheus.last_name = "Onyango"
+
+capheus.learn(avi.teach)
+
+steve.knowledge.each { |k| puts k }
+capheus.knowledge.each { |k| puts k }
