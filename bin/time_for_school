@@ -1,20 +1,20 @@
-#!/usr/bin/env ruby
+(#!/usr/bin/env ruby
 
 require_relative "../lib/user.rb"
 require_relative "../lib/teacher.rb"
 require_relative "../lib/student.rb"
 
-steve = Student.new
-steve.first_name = "Steve"
-steve.last_name = "Jobs"
+elise = Student.new
+elise.first_name = "Elise"
+elise.last_name = "BabyHead"
 
-avi = Teacher.new
-avi.first_name = "Avi"
-avi.last_name = "Flombaum"
+pikachu = Teacher.new
+pikachu.first_name = "Pikachu"
+pikachu.last_name = ""
 
 
-some_knowledge = avi.teach 
+candy_facts = pikachu.teach 
 
-steve.learn(some_knowledge)
+elise.learn(candy_facts)
 
-puts "Steve just learned this important knowledge: '#{steve.knowledge.first}' from Avi"
+puts "Elise just learned '#{elise.knowledge}' from Pikachu.")
